@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fã-Clube da Andressa Urach</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #f3f3f3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        header {
+            background: linear-gradient(to right, #ff3399, #ff66cc);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 5px solid #ff3399;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #ff66cc;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-flex;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3em;
+            transition: all 0.3s ease-in-out;
+            border: 2px solid transparent;
+            padding: 8px 16px;
+        }
+
+        nav ul li a:hover {
+            color: #ff3399;
+            border-color: #ff3399;
+            background-color: white;
+        }
+
+        section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #ffffff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            color: #ff3399;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .line-timeline {
+            list-style-type: none;
+            padding: 0;
+            margin: 40px auto;
+            max-width: 700px;
+        }
+
+        .line-timeline li {
+            padding-left: 25px;
+            margin-bottom: 30px;
+            position: relative;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .line-timeline li:before {
+            content: '';
+            position: absolute;
+            left: -18px;
+            top: 8px;
+            width: 20px;
+            height: 20px;
+            background-color: #ff3399;
+            border-radius: 50%;
+        }
+
+        .quiz-container {
+            background-color: #ff66cc;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .quiz-question {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .quiz-options button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #ff3399;
+            color: white;
+            border: 2px solid #ffffff;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .quiz-options button:hover {
+            background-color: #ffffff;
+            color: #ff3399;
+            border-color: #ff3399;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #ff66cc;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ff3399;
+            text-decoration: underline;
+        }
+
+        /* Adicionando efeitos ao hover */
+        .button-hover {
+            padding: 10px;
+            font-weight: bold;
+            color: #ff66cc;
+            border: 2px solid #ff3399;
+            background-color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .button-hover:hover {
+            color: white;
+            background-color: #ff3399;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fã-Clube da Andressa Urach</h1>
+    <p>O melhor lugar para os fãs da Andressa Urach!</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#curiosidades">Curiosidades</a></li>
+        <li><a href="#line-timeline">Linha do Tempo</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#junte-se">Junte-se</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <h2>Sobre Andressa Urach</h2>
+        <p>Andressa Urach é uma personalidade famosa brasileira, que ficou conhecida como modelo, apresentadora e por sua participação em reality shows. Sua história é marcada por superações e transformações pessoais que inspiram muitos. Hoje, ela compartilha sua trajetória com seus seguidores, e usa sua história para ajudar os outros a superarem dificuldades semelhantes.</p>
+    </section>
+
+    <!-- Curiosidades -->
+    <section id="curiosidades">
+        <h2>Curiosidades</h2>
+        <ul style="text-align: left; max-width: 800px; margin: 0 auto;">
+            <li>Andressa Urach foi vice-campeã na 6ª edição de "A Fazenda" (2013).</li>
+            <li>Ela publicou o livro "Morri para Viver", onde conta sobre sua vida, lutas e transformação.</li>
+            <li>Hoje, Andressa compartilha sua fé e atua como palestrante motivacional.</li>
+        </ul>
+    </section>
+
+    <!-- Linha do Tempo -->
+    <section id="line-timeline">
+        <h2>Linha do Tempo de Andressa Urach</h2>
+        <ul class="line-timeline">
+            <li><strong>2009:</strong> Andressa Urach inicia sua carreira como modelo e assistente de palco.</li>
+            <li><strong>2013:</strong> Participa de "A Fazenda" e se torna uma das maiores polêmicas do programa.</li>
+            <li><strong>2014:</strong> Inicia sua jornada de fé e superação.</li>
+            <li><strong>2015:</strong> Lança o livro "Morri para Viver".</li>
+            <li><strong>2020:</strong> Foca em sua carreira de influenciadora e palestrante.</li>
+        </ul>
+    </section>
+
+    <!-- Quiz -->
+    <section id="quiz">
+        <h2>Quiz: Quanto você sabe sobre Andressa Urach?</h2>
+        <div class="quiz-container">
+            <p class="quiz-question" id="quiz-question">Carregando pergunta...</p>
+            <div class="quiz-options" id="quiz-options"></div>
+            <p id="quiz-feedback"></p>
+        </div>
+    </section>
+
+    <!-- Junte-se -->
+    <section id="junte-se">
+        <h2>Junte-se ao Fã-Clube</h2>
+        <form>
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu E-mail" required>
+            <textarea placeholder="Por que você ama Andressa Urach?" required></textarea>
+            <button type="submit" class="button-hover">Enviar</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Fã-Clube da Andressa Urach | Criado com ❤ por Fãs</p>
+    <a href="#topo">Voltar ao topo</a>
+</footer>
+
+<script>
+    // Perguntas e respostas do Quiz
+    const questions = [
+        {
+            question: "Qual foi o nome do livro lançado por Andressa Urach?",
+            options: ["Morri para Viver", "Vivendo para Vencer", "Superando Obstáculos", "A Vida de Andressa"],
+            correct: 0
+        },
+        {
+            question: "Em que reality show Andressa Urach foi vice-campeã?",
+            options: ["Big Brother Brasil", "A Fazenda", "Casa dos Artistas", "O Aprendiz"],
+            correct: 1
+        },
+        {
+            question: "Em que ano Andressa Urach iniciou sua transformação espiritual?",
+            options: ["2012", "2013", "2014", "2015"],
+            correct: 2
+        },
+        {
+            question: "Andressa Urach já foi modelo e assistente de palco de qual programa?",
+            options: ["Domingão do Faustão", "Programa Silvio Santos", "A Fazenda", "Pânico na TV"],
+            correct: 0
+        },
+        {
+            question: "Qual é a principal mudança de vida que Andressa Urach compartilhou em sua autobiografia?",
+            options: ["Mudança para a vida de atriz", "Superação pessoal e fé", "Fama na mídia", "Luta contra as drogas"],
+            correct: 1
+        }
+    ];
+
+    let currentQuestionIndex = 0;
+    let score = 0;
+
+    function loadQuestion() {
+        const question = questions[currentQuestionIndex];
+        document.getElementById("quiz-question").innerText = question.question;
+        const optionsDiv = document.getElementById("quiz-options");
+        optionsDiv.innerHTML = '';
+        question.options.forEach((option, index) => {
+            const button = document.createElement("button");
+            button.innerText = option;
+            button.onclick = () => checkAnswer(index);
+            optionsDiv.appendChild(button);
+        });
+        document.getElementById("quiz-feedback").innerText = '';
+    }
+
+    function checkAnswer(selectedIndex) {
+        const question = questions[currentQuestionIndex];
+        if (selectedIndex === question.correct) {
+            score++;
+            document.getElementById("quiz-feedback").innerText = "Resposta correta! 🎉";
+        } else {
+            document.getElementById("quiz-feedback").innerText = "Resposta errada. 😞";
+        }
+
+        // Desabilitar respostas e passar para a próxima pergunta após 1.5 segundos
+        setTimeout(() => {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < questions.length) {
+                loadQuestion();
+            } else {
+                document.getElementById("quiz-feedback").innerText += ` Sua pontuação final foi: ${score} de ${questions.length}`;
+            }
+        }, 1500);
+    }
+
+    // Iniciar quiz ao carregar a página
+    window.onload = loadQuestion;
+</script>
+
+</body>
+</html>
